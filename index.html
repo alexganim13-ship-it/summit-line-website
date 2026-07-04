@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Summit Line Systems | AI Voice Agents for Plumbing Companies</title>
+<meta name="description" content="AI voice agent that answers every call, captures the lead, and routes the job — 24/7. Built for plumbing companies." />
+<style>
+  :root {
+    --navy: #1f3864;
+    --navy-dark: #14233f;
+    --accent: #c55a11;
+    --ink: #1d2733;
+    --muted: #5b6778;
+    --bg: #ffffff;
+    --bg-soft: #f4f6f9;
+    --border: #e3e8ef;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 10;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: var(--navy);
+  }
+  .logo span { color: var(--accent); }
+  .nav-cta {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--navy-dark); }
+  .hero {
+    padding: 88px 0 72px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 100%);
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.1;
+    margin: 0 0 20px;
+    color: var(--navy);
+    font-weight: 800;
+  }
+  .sub {
+    font-size: clamp(17px, 2.2vw, 20px);
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 36px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 6px 18px rgba(197, 90, 17, 0.28);
+  }
+  .cta-btn:hover { background: #a8480c; }
+  .cta-sub { margin-top: 14px; font-size: 13px; color: var(--muted); }
+  .features {
+    padding: 72px 0;
+    border-top: 1px solid var(--border);
+  }
+  .features h2 {
+    text-align: center;
+    font-size: 28px;
+    color: var(--navy);
+    margin: 0 0 12px;
+  }
+  .features .lead {
+    text-align: center;
+    color: var(--muted);
+    max-width: 560px;
+    margin: 0 auto 48px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+  .card {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px 26px;
+  }
+  .card .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: var(--navy);
+  }
+  .card p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  .stat {
+    background: var(--navy);
+    color: #fff;
+    padding: 64px 0;
+    text-align: center;
+  }
+  .stat .big {
+    font-size: clamp(34px, 6vw, 56px);
+    font-weight: 800;
+    color: #fff;
+  }
+  .stat .big span { color: #f0a875; }
+  .stat p {
+    max-width: 560px;
+    margin: 14px auto 0;
+    color: #c9d3e3;
+    font-size: 16px;
+  }
+  .final-cta {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-size: 30px;
+    color: var(--navy);
+    margin: 0 0 14px;
+  }
+  .final-cta p {
+    color: var(--muted);
+    margin: 0 0 30px;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">Summit Line <span>Systems</span></div>
+      <a class="nav-cta" href="#book-demo">Book a Free Demo</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">AI Voice Agents for Plumbing Companies</span>
+      <h1>Never miss another call.</h1>
+      <p class="sub">An AI voice agent that answers every call, captures the lead, and routes the job — 24/7.</p>
+      <a id="book-demo" class="cta-btn" href="https://calendly.com/alexganim13/plumbing-ai-audit" target="_blank" rel="noopener">Book a Free Demo</a>
+      <div class="cta-sub">15-minute Plumbing AI Audit. No pressure, no pitch deck — just your numbers.</div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="wrap">
+      <h2>What your AI receptionist does</h2>
+      <p class="lead">It runs on your existing business number and never clocks out.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="num">1</div>
+          <h3>Answers Every Call</h3>
+          <p>Picks up within two rings, 24 hours a day, every day — even when your crew is on a job or it's 2am.</p>
+        </div>
+        <div class="card">
+          <div class="num">2</div>
+          <h3>Triages Emergencies</h3>
+          <p>Recognizes burst pipes, no water, sewage backups, and gas smells, then alerts your on-call tech immediately.</p>
+        </div>
+        <div class="card">
+          <div class="num">3</div>
+          <h3>Books the Job</h3>
+          <p>Captures the customer's details and gets the job on your calendar — no phone tag, no missed follow-up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stat">
+    <div class="wrap">
+      <div class="big">$104,000<span>/year</span></div>
+      <p>That's what 5 missed calls a week can cost a plumbing company over a year. Most owners never see this number — because they never see the calls they missed.</p>
+    </div>
+  </section>
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Hear it live on your own number.</h2>
+      <p>Book 15 minutes and we'll show you exactly what it sounds like — and what it would have caught last week.</p>
+      <a class="cta-btn" href="https://calendly.com/alexganim13/plumbing-ai-audit" target="_blank" rel="noopener">Book a Free Demo</a>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap">© 2026 Summit Line Systems. AI voice agents for plumbing companies.</div>
+  </footer>
+</body>
+</html>
